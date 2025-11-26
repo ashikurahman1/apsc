@@ -12,6 +12,7 @@ import {
 } from 'react-icons/fa6';
 import Logo from '../components/Logo/Logo';
 import { NavLink } from 'react-router';
+import Marquee from 'react-fast-marquee';
 
 const navLink = (
   <>
@@ -44,8 +45,8 @@ const Navbar = () => {
   return (
     <header>
       {/* top header */}
-      <section className="bg-neutral-900 text-neutral-100 space-x-6 p-2">
-        <div className="flex flex-col items-center gap-3 lg:flex-row justify-between w-full lg:w-10/12 px-4 mx-auto text-sm">
+      <section className="bg-neutral-900 text-neutral-100 space-x-6 p-2 sticky top-0 left-0 z-111">
+        <div className="flex  flex-col items-center gap-3 lg:flex-row justify-between w-full lg:w-10/12 px-4 mx-auto text-sm">
           <div className="flex gap-3">
             <p className="flex items-center gap-2">
               <span>
@@ -95,7 +96,7 @@ const Navbar = () => {
           <div
             className={`absolute ${
               mobileMenu
-                ? 'top-0 left-0 duration-300 animation-all bg-primary/90 text-neutral-100 h-full w-full p-10 py-20'
+                ? 'top-0 left-0 duration-300 animation-all bg-primary/90 text-neutral-100 h-full w-full p-10 py-20 z-999'
                 : '-top-100'
             }`}
           >
@@ -119,8 +120,25 @@ const Navbar = () => {
       </nav>
       {/* Notice */}
       <div className="my-2 lg:w-10/12 mx-auto px-4">
-        <p className="text-primary uppercase">Notice : ...................</p>
+        <div className="flex p-2">
+          <h4 className="text-primary uppercase mr-4">Notice</h4>
+          <Marquee pauseOnHover={true} speed={60} className="space-x-4">
+            <p className="mr-10"> দূর্গাপূজা 2025</p>
+            <p className="mr-10"> প্রাক নির্বাচনী পরীক্ষা ২০২৫</p>
+            <p className="mr-10"> অর্ধবার্ষিক পরীক্ষার সময়সূচী পরিবর্তন</p>
+            <p className="mr-10">অর্ধ বার্ষিক পরীক্ষা সংক্রান্ত নোটিশ</p>
+            <p className="mr-10">
+              {' '}
+              শ্রী শ্রী শ্যামা পূজার বন্ধ দূর্গাপূজা 2025{' '}
+            </p>
+            <p className="mr-10"> প্রাক নির্বাচনী পরীক্ষা ২০২৫ </p>
+          </Marquee>
+        </div>
+
+        <p className="">Notice : ...................</p>
       </div>
+
+      <div className="h-1000"></div>
     </header>
   );
 };
