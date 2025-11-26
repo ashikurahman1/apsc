@@ -121,7 +121,7 @@ const Navbar = () => {
       {/* Notice */}
       <div className="my-2 lg:w-10/12 mx-auto px-4">
         <div className="flex p-2">
-          <h4 className="text-primary uppercase mr-4">Notice</h4>
+          <h4 className="text-primary uppercase mr-4 font-bold">Notice</h4>
           <Marquee pauseOnHover={true} speed={60} className="space-x-4">
             <p className="mr-10"> দূর্গাপূজা 2025</p>
             <p className="mr-10"> প্রাক নির্বাচনী পরীক্ষা ২০২৫</p>

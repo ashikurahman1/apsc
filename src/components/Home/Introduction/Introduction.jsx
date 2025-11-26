@@ -6,7 +6,7 @@ const Introduction = () => {
       <div className="border border-primary/30 rounded-md shadow-md p-3">
         <div className="flex gap-3 p-3 ">
           {/* Name & Designation */}
-          <div className="border-primary border w-20 lg:w-40 h-45 overflow-hidden rounded-md shadow-md">
+          <div className="border-primary border w-20 lg:w-40 h-20 lg:h-45 overflow-hidden rounded-md shadow-md">
             <img
               src="https://img.favpng.com/3/11/24/3d-woman-avatar-stylized-cartoon-woman-avatar-with-glasses-g0FutwYY_t.jpg"
               alt="Principle Image"
@@ -41,7 +41,7 @@ const Introduction = () => {
       <div className="border border-primary/30 rounded-md shadow-md p-3">
         <div className="flex gap-3 p-3 ">
           {/* Name & Designation */}
-          <div className="border-primary border w-20 lg:w-40 h-45 overflow-hidden rounded-md shadow-md">
+          <div className="border-primary border w-20 lg:w-40 h-20 lg:h-45 overflow-hidden rounded-md shadow-md">
             <img
               src="https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
               alt="Principle Image"
