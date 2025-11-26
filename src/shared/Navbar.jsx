@@ -134,11 +134,7 @@ const Navbar = () => {
             <p className="mr-10"> প্রাক নির্বাচনী পরীক্ষা ২০২৫ </p>
           </Marquee>
         </div>
-
-        <p className="">Notice : ...................</p>
       </div>
-
-      <div className="h-1000"></div>
     </header>
   );
 };
