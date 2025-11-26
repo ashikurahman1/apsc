@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <header>
       {/* top header */}
-      <section className="bg-neutral-900 text-neutral-100 space-x-6 p-2 sticky top-0 left-0 z-111">
+      <section className="bg-neutral-900 text-neutral-100 space-x-6 p-2 fixed top-0 w-full z-111">
         <div className="flex  flex-col items-center gap-3 lg:flex-row justify-between w-full lg:w-10/12 px-4 mx-auto text-sm">
           <div className="flex gap-3">
             <p className="flex items-center gap-2">
@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
       </section>
       {/* navigation */}
-      <nav className="">
+      <nav className="mt-20 lg:mt-17">
         {/* Logo */}
         <div className="w-full lg:w-10/12 p-3 mx-auto">
           <Logo />

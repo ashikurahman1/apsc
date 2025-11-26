@@ -14,8 +14,8 @@ const Introduction = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">Principle name</h2>
-            <p className="text-neutral-800">Principle</p>
+            <h2 className="text-2xl font-semibold mb-2">Principle name</h2>
+            <p className="">Principle</p>
           </div>
         </div>
         <div className="border-t border-neutral-300 lg:p-5">
@@ -49,8 +49,8 @@ const Introduction = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold">Chairman name</h2>
-            <p className="text-neutral-800">Chairman</p>
+            <h2 className="text-2xl font-semibold mb-2">Chairman name</h2>
+            <p className="">Chairman</p>
           </div>
         </div>
         <div className="border-t border-neutral-300 lg:p-5">
