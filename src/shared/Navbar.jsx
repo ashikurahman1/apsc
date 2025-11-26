@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   FaAngleDown,
   FaBars,
@@ -6,15 +6,41 @@ import {
   FaFacebookF,
   FaInstagram,
   FaPhone,
-  FaTwitter,
   FaWhatsapp,
+  FaX,
   FaYoutube,
 } from 'react-icons/fa6';
 import Logo from '../components/Logo/Logo';
 import { NavLink } from 'react-router';
-import { FaArrowAltCircleDown } from 'react-icons/fa';
+
+const navLink = (
+  <>
+    <li className="">
+      <NavLink to="/">Home </NavLink>
+    </li>
+    <li className="">
+      <NavLink to="/about" className={'flex items-center gap-1'}>
+        About <FaAngleDown />{' '}
+      </NavLink>
+    </li>
+    <li className="">
+      <NavLink to="/information" className={'flex items-center gap-1'}>
+        Information <FaAngleDown />{' '}
+      </NavLink>
+    </li>
+    <li className="">
+      <NavLink to="/admission" className={'flex items-center gap-1'}>
+        Admission <FaAngleDown />{' '}
+      </NavLink>
+    </li>
+    <li className="">
+      <NavLink to="/contact">Contact</NavLink>
+    </li>
+  </>
+);
 
 const Navbar = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
   return (
     <header>
       {/* top header */}
@@ -43,48 +69,51 @@ const Navbar = () => {
               <FaWhatsapp />
             </div>
             <div>
-              <button className="btn btn-primary btn-sm">Online Apply</button>
+              <button className="btn btn-primary btn-sm">
+                Online Admission
+              </button>
             </div>
           </div>
         </div>
       </section>
       {/* navigation */}
-      <nav className="relative">
+      <nav className="">
         {/* Logo */}
         <div className="w-full lg:w-10/12 p-3 mx-auto">
           <Logo />
         </div>
         {/* Mobile Menu */}
-        <div className="absolute top-5 ml-3 lg:hidden">
-          <button className="btn btn-primary">
+        <div className="absolute top-25 ml-3 lg:hidden">
+          <button
+            onClick={() => setMobileMenu(!mobileMenu)}
+            className="btn btn-primary"
+          >
             <FaBars className="" size={22} />
           </button>
         </div>
+        {mobileMenu && (
+          <div
+            className={`absolute ${
+              mobileMenu
+                ? 'top-0 left-0 duration-300 animation-all bg-primary/90 text-neutral-100 h-full w-full p-10 py-20'
+                : '-top-100'
+            }`}
+          >
+            <ul className="uppercase font-semibold space-y-5">{navLink}</ul>
+            <button
+              onClick={() => setMobileMenu(false)}
+              className="absolute top-10 right-10 bg-red-500 p-3 rounded-md shadow-md focus:bg-primary"
+            >
+              <FaX size={25} />
+            </button>
+          </div>
+        )}
+
         {/* Menus */}
 
         <div className="bg-primary text-sm">
           <ul className="uppercase font-semibold w-full lg:w-10/12 px-4 mx-auto  hidden lg:flex items-center gap-3 text-neutral-100 ">
-            <li className="">
-              <NavLink to="/">Home </NavLink>
-            </li>
-            <li className="">
-              <NavLink to="/about" className={'flex items-center gap-1'}>
-                About <FaAngleDown />{' '}
-              </NavLink>
-            </li>
-            <li className="">
-              <NavLink to="/information" className={'flex items-center gap-1'}>
-                Information <FaAngleDown />{' '}
-              </NavLink>
-            </li>
-            <li className="">
-              <NavLink to="/admission" className={'flex items-center gap-1'}>
-                Admission <FaAngleDown />{' '}
-              </NavLink>
-            </li>
-            <li className="">
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
+            {navLink}
           </ul>
         </div>
       </nav>

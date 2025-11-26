@@ -2,7 +2,7 @@
 @plugin "daisyui";
 
 nav li a {
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
 nav li a.active {
   background-color: red;

@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const Banner = () => {
   return (
@@ -15,14 +15,18 @@ const Banner = () => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
-        pagination={{
-          clickable: true,
+        // pagination={{
+        //   clickable: true,
+        // }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="max-h-100 w-full overflow-hidden">
+          <div className="h-52 lg:h-120 w-full overflow-hidden">
             <img
               src={Slider1}
               alt="Event"
@@ -31,7 +35,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="h-80 w-full overflow-hidden">
+          <div className="h-52 lg:h-120 w-full overflow-hidden">
             <img
               src={Slider2}
               alt="Event"
