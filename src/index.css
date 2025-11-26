@@ -1,2 +1,12 @@
 @import 'tailwindcss';
 @plugin "daisyui";
+
+nav li a {
+  padding: 0.4rem;
+}
+nav li a.active {
+  background-color: red;
+}
+nav li a:hover {
+  background-color: red;
+}
