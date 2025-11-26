@@ -96,7 +96,7 @@ const Navbar = () => {
           <div
             className={`absolute ${
               mobileMenu
-                ? 'top-0 left-0 duration-300 animation-all bg-primary/90 text-neutral-100 h-full w-full p-10 py-20 z-999'
+                ? 'top-0 left-0 duration-300 transition-all bg-primary/90 text-neutral-100 h-full w-full p-10 py-20 z-999'
                 : '-top-100'
             }`}
           >
