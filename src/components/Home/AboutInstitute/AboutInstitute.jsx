@@ -4,7 +4,7 @@ const AboutInstitute = () => {
   return (
     <section className="lg:w-6/12 px-5 mx-auto py-15 bg-primary/5 my-5 rounded-md shadow-md shadow-primary/20">
       <div className="section-title relative">
-        <h2 className="text-2xl font-semibold text-center mb-8">
+        <h2 className="text-2xl lg:text-3xl  font-semibold text-center mb-8">
           About <span className="text-primary">Institute</span>
         </h2>
       </div>
@@ -15,7 +15,7 @@ const AboutInstitute = () => {
           connective Practice, regular test, systematic and most importantly
           science based activities in the classrooms targeting Academic calendar
           published for each year under the guidance of Minstry of Education,
-          Sylhet Education Board. As a result this institution has been
+          Chattogram Education Board. As a result this institution has been
           establishing its superiority both in curricular and co-curricular
           activities.
         </p>
@@ -28,10 +28,10 @@ const AboutInstitute = () => {
         </p>
         <p>
           We are determined to shape it as the best educational institution of
-          Sylhet as well as Bangladesh Maintaining consistency in the acquired
-          result and reputation. Our only expectation is to get the cordial
-          co-operation of all to administer the institution and improve the
-          standard of education.
+          Chattogram as well as Bangladesh Maintaining consistency in the
+          acquired result and reputation. Our only expectation is to get the
+          cordial co-operation of all to administer the institution and improve
+          the standard of education.
         </p>
       </div>
     </section>
