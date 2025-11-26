@@ -43,7 +43,7 @@ const quickServices = [
 const QuickService = () => {
   return (
     <div className="bg-[url(/image.png)] bg-no-repeat bg-cover">
-      <section className="lg:w-10/12 pb-15 px-4 mx-auto flex flex-col  gap-5 lg:gap-10 lg:flex-row items-center justify-between">
+      <section className="lg:w-10/12 pb-15 px-4 mx-auto flex flex-col  gap-8 lg:gap-15 lg:flex-row items-center justify-between">
         <div className="lg:flex-1/2 grid grid-cols-2 lg:grid-cols-3 gap-5 ">
           {quickServices.map((service, index) => (
             <div

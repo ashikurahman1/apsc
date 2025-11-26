@@ -10,3 +10,24 @@ nav li a.active {
 nav li a:hover {
   background-color: red;
 }
+
+.section-title h2::before {
+  position: absolute;
+  left: 50%;
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: #666;
+  bottom: -6px;
+  margin-left: -63px;
+}
+.section-title h2::after {
+  position: absolute;
+  left: 50%;
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: #666;
+  bottom: -11px;
+  margin-left: -53px;
+}
