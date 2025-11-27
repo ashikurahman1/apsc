@@ -74,13 +74,13 @@ const OurTeacher = () => {
         </h2>
       </div>
       {/*  */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 my-15  gap-3 lg:gap-7">
+      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 my-15  gap-3 lg:gap-7">
         {ourTeachers.map((teacher, index) => (
           <div
             key={index}
             className=" border border-primary/20 rounded-md shadow-md p-3 hover:shadow-lg hover:-translate-1 transition"
           >
-            <div className="w-full h-30 lg:h-46 overflow-hidden bg-primary/50 rounded-md">
+            <div className="w-full h-30 lg:h-40 overflow-hidden bg-primary/50 rounded-md">
               <img
                 src={teacher.photo}
                 alt={teacher.name}

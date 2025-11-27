@@ -5,6 +5,7 @@ import QuickService from '../../components/Home/QuickService/QuickService';
 import AboutInstitute from '../../components/Home/AboutInstitute/AboutInstitute';
 import OurTeacher from '../../components/Home/OurTeacher/OurTeacher';
 import Statistics from '../../components/Home/Statistics/Statistics';
+import ManagingCommitte from '../../components/Home/ManagingCommitte/ManagingCommitte';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutInstitute />
       <OurTeacher />
       <Statistics />
+      <ManagingCommitte />
     </main>
   );
 };
