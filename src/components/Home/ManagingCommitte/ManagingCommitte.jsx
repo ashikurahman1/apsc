@@ -108,7 +108,7 @@ const ManagingCommitte = () => {
           </div>
           <div className="border border-primary rounded-md">
             <h2 className="uppercase p-5 text-2xl bg-primary text-white font-semibold ">
-              Events
+              News
             </h2>
             {allEvents.map((event, index) => (
               <div className="border-b border-neutral-200 p-3 flex gap-2 ">
@@ -127,7 +127,7 @@ const ManagingCommitte = () => {
               </div>
             ))}
             <button className="uppercase font-semibold text-xl text-white bg-primary p-3 w-full mt-2">
-              All Events
+              All News
             </button>
           </div>
         </div>
